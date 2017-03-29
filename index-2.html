@@ -1,0 +1,40 @@
+<!Doctype html>
+<html ng-app="tabs">
+  <head>
+  	<meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/angular.min.js"></script>
+    <script src="js/app-tab.js"></script>
+  </head>
+  <body>
+  <section ng-controller="TabController as tabs">
+    <ul class="nav nav-pills">
+      <li ng-class="{active:tabs.tab===1}"><a href="" ng-click="tabs.setPanel(1)">Description</a></li>
+     
+      <li ng-class="{active:tabs.tab===2}"><a href="" ng-click="tabs.setPanel(2)">Specification</a></li>
+      
+      <li ng-class="{active:tabs.tab===3}"><a href="" ng-click="tabs.setPanel(3)">Reviews</a></li>
+      
+    </ul>      
+  
+    <div class="panel" ng-show="tabs.isSelected(1)">
+          <h4>Description</h4>
+          <blockquote>1111111111</blockquote>  
+              
+    </div> 
+    <div class="panel" ng-show="tabs.isSelected(2)">
+          <h4>Specification</h4>
+          <blockquote>2222222222</blockquote>               
+    </div>
+    <div class="panel" ng-show="tabs.isSelected(3)">
+          <h4>Reviews</h4>
+          <blockquote>3333333333</blockquote> 
+               
+    </div>
+
+  
+
+  </section>
+
+  </body>
+</html>

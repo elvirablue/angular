@@ -8,6 +8,20 @@
 	app.controller("StoreController", function(){
 		this.applications = apps;
 	});
+
+	app.directive("productItem", function() {
+		return {
+			restrict: 'A',// E-element node / A-atribute
+			templateUrl: 'prod-item.html'
+		}
+		 
+			
+	})
+
+
+
+
+	
 	var apps = [
 	{
 		id: 1,

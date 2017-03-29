@@ -1,0 +1,167 @@
+
+<!Doctype html>
+<html>
+<head> 
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<title>Магазин</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style-main.css">
+	
+</head>
+
+<body class="bg-gray">	
+	<div class="block-white">
+		<div class="wrapper-x ">
+			<header class="page-header">
+				<a href="#" class="logo"></a>
+				<nav class="main-nav">
+					<ul class="main-nav__list">
+						<li class="main-nav__item"><a href="index.html" class="main-nav__link">ГЛАВНАЯ</a></li>
+						<li class="main-nav__item active"><a href="catalog-category.html" class="main-nav__link">Каталог приложений</a></li>
+						<li class="main-nav__item"><a href="#" class="main-nav__link">О компании</a></li>
+						<li class="main-nav__item "><a href="#" id="backed" class="main-nav__link backet">0</a></li>
+					</ul>
+				</nav>
+			</header>
+		</div>	
+	</div>
+	
+	<div class="wrapper-x block-flex">
+		<aside class="catalog-nav">
+			<div class="catalog-nav__header">
+				<h2 class="catalog-nav__title">Каталог приложений</h2>				
+			</div>
+
+			<ul class="catalog-nav__list">
+				
+			</ul>
+		</aside>
+
+		<section class="page-main page-main--product" id="right-panel">
+			
+		</section>
+		
+	</div>
+	
+	<template id="catalog_template">
+		<li class="catalog-nav__item">
+			<a class="catalog-nav__link" data-idApp="" href="#">Стандартный пакет</a>
+		</li>
+	</template>
+
+	<template id="card_app_template">
+		<div>
+			<div class="page-main__header ">
+				<h2 class="page-main__title">НОВЫЙ ЦФТ-БАНК</h2>				
+			</div>
+
+			<div class="product-basic-info">
+				<div class="product-basic-info__text">
+					<p class="product-basic-info__date">09 сентября 2016</p>
+					<div>
+						
+					</div>
+					<p class="product-basic-info__requirements">
+						Требования: <span> совместимо с v.14.1, ТЯ v.7.4.0.0 и выше, при наличии лицензии на Проигрыватель форм в web</span>
+					</p>				
+				</div>
+
+				<div class="product-basic-info__photo-btn">
+					<div class="photo-wrapper">
+						<img src="img/shot-2.png" alt="">						
+					</div>
+					<p class="price-app"></p>
+					<a href="#" id="btn-basket" class="btn-next btn-next__basket">В корзину</a>
+				</div>
+				
+			</div>
+
+			<div class="page-main__header ">
+				<h2 class="page-main__title">Основные функции</h2>				
+			</div>
+
+			<div class="product-add-info">
+				<ul class="product-add-info__list">
+					
+				</ul>				
+			</div>
+		</div>
+		</template>
+
+		<template id="basket_step1_template">
+	<nav class="steps-wrapper">
+		
+		<ul class="steps">
+			<li class="steps__item active">
+				<span class="steps__item-link">
+					<span class="steps__item-number">1</span>
+					<span class="steps__item-label">Корзина</span>
+				</span>
+			</li>
+			<li class="steps__item">
+				<span class="steps__item-link">
+					<span class="steps__item-number">2</span>
+					<span class="steps__item-label">Оплата</span>
+				</span>
+			</li>
+			<li class="steps__item">
+				<span class="steps__item-link">
+					<span class="steps__item-number">3</span>
+					<span class="steps__item-label">Доставка</span>
+				</span>
+			</li>
+			<li class="steps__item">
+				<span class="steps__item-link">
+					<span class="steps__item-number">4</span>
+					<span class="steps__item-label">Завершено</span>
+				</span>
+			</li>
+		</ul>
+	</nav>
+	
+	<div class="block-content">
+		<table class="table-product">
+			<tbody id="container_basket_item">
+				<tr class="table-product__row-title">
+					<td class="table-product__cell"></td>
+					<td class="table-product__cell">Стоимоть</td>
+					<td class="table-product__cell">Итого</td>
+					<td class="table-product__cell"></td>
+				</tr>
+
+				
+			</tbody>
+		</table>		
+	</div>
+
+	<div class="block-end block-end__step-1">
+		<div class="table-total">
+			<span class="table-total__label">Итого</span>
+			<span class="table-total__sum dollar">549 </span>
+			<span class="table-total__sum-cent">99</span>				
+		</div>
+	
+		<a href="index-step2.html" class="btn-next">Далее</a>		
+	</div>
+</template>
+
+<template id="basket_item_template">
+	<tr class="table-product__row-info">
+		<td class="table-product__cell table-product__cell_name">Расчет штрафов</td>
+		<td class="table-product__cell dollar table-product__cell_value">139,99</td>
+		<td class="table-product__cell dollar table-product__cell_total">139,99</td>
+		<td class="table-product__cell">
+			<button class="table-product__del"></button>
+		</td>
+	</tr>
+</template>
+
+	<script src="js/js-function.js"></script>
+
+	<script src="js/js-category.js"></script>	
+</body>
+</html>
