@@ -21,7 +21,7 @@
     	var store = this;
  	
     	store.products  = [];
-    	httpq.get('data.json')
+    	httpq.get('./api/api_info.json')
     	    .then(function(result){
     	        store.products = result.data;
     	    })
@@ -29,11 +29,9 @@
     	        alert('error');
     	    })
     	    .finally(function(){
-    	        alert('finally')
+    	        alert(store);
     	    });
-	});
-
-		
+	});	
 	
 	
 })();

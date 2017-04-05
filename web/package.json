@@ -1,0 +1,14 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "app.js",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.8"
+  }
+}
